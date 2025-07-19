@@ -1,7 +1,19 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <a xlink:href="javascript:alert('XSS через SVG link!')">
-    <circle cx="100" cy="100" r="50" fill="green" />
-  </a>
-</svg>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест вывода в консоль</title>
+</head>
+<body>
+    <h1>Проверка выполнения JavaScript</h1>
+    <p>Если JavaScript успешно выполнен, вы увидите сообщение в консоли разработчика вашего браузера.</p>
+    <p>Чтобы открыть консоль, обычно нужно нажать **F12**, затем перейти на вкладку "**Console**".</p>
+
+    <script>
+        // Этот JavaScript-код будет выполнен при загрузке страницы.
+        console.log('--- Тест JavaScript-вывода в консоль успешно выполнен! ---');
+        console.log('Дата и время выполнения:', new Date().toLocaleString());
+        console.log('User Agent (браузер):', navigator.userAgent);
+    </script>
+</body>
+</html>
