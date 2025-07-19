@@ -19,7 +19,7 @@ func main() {
 
 	// --- Запуск HTTP сервера ---
 	addr := ":32018"
-	fmt.Printf("Запускаю HTTP сервер на http://127.0.0.1%s\n", addr)
+	fmt.Printf("Запускаю HTTP сервер на http://0.0.0.0%s\n", addr)
 	fmt.Println("Чтобы остановить, нажмите Ctrl+C")
 
 	err := http.ListenAndServe(addr, nil)
